@@ -7,3 +7,7 @@
 
 ### How to RECEIVE data:
 - When the Expense aggregator microservice is requested, the microservice aggregates the 'bank.csv' by category and saves the results to the 'bank_by_category.csv" which is saved in the same directory as the 'bank.csv'.
+
+## UML
+
+![alt text](UML.png)
