@@ -3,10 +3,10 @@
 ## Communication Contract:
 
 ### How to REQUEST data:
-- The Expense Aggregator microservice is requested by looking for a file named 'bank.csv' in the same directory as the microservice .py files. It can be requested by the intial load of the 'bank.csv' in the directory. It can also be requested if the 'bank.csv' is modified (i.e. an updated bank statement is loaded).
+- The Expense Aggregator microservice is requested by sending a file location of the a bank statement (saved as a .csv file) through a ZeroMQ socket. 
 
 ### How to RECEIVE data:
-- When the Expense aggregator microservice is requested, the microservice aggregates the 'bank.csv' by category and saves the results to the 'bank_by_category.csv" which is saved in the same directory as the 'bank.csv'.
+- When the Expense aggregator microservice is requested, the microservice aggregates the bank statement from the file path received by category and saves the results to the 'bank_by_category.csv" which is saved in the same directory as the file path requested.
 
 ## UML
 
